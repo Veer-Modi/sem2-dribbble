@@ -73,7 +73,7 @@ body {
     width: 12%;
 }
 
-.sign>button {
+.sign>a button {
     text-decoration: none;
     border: none;
     background: #FFFFFF;
@@ -83,15 +83,15 @@ body {
     cursor: pointer;
 }
 
-.sign>button:hover {
+.sign>a button:hover {
     color: #565564;
 }
 
-.log>button:hover {
+.log>a button:hover {
     background-color: #565564;
 }
 
-.log>button {
+.log>a button {
     text-decoration: none;
     border: none;
     background: black;
