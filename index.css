@@ -444,3 +444,56 @@ body {
 .stc>button:hover {
     background: #0000008a;
 }
+
+.slider{
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    /* overflow: hidden; */
+}
+
+.slide-track{
+    display: flex;
+    width: calc(250px*16);
+    animation: scroll 50s linear infinite;
+}
+.slide-track:hover{
+animation-play-state: paused;
+}
+
+.slide{
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 8));
+    }
+    
+}
+
+.detail>div img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.detail{
+    cursor: pointer;
+    transition: transform 0.7s;
+}
+.detail:hover{
+    transform: translateZ(10px);
+}
+
