@@ -445,7 +445,7 @@ body {
     background: #0000008a;
 }
 
-.slider{
+.slider {
     height: 250px;
     margin: auto;
     position: relative;
@@ -456,16 +456,17 @@ body {
     /* overflow: hidden; */
 }
 
-.slide-track{
+.slide-track {
     display: flex;
     width: calc(250px*16);
     animation: scroll 50s linear infinite;
 }
-.slide-track:hover{
-animation-play-state: paused;
+
+.slide-track:hover {
+    animation-play-state: paused;
 }
 
-.slide{
+.slide {
     height: 200px;
     width: 250px;
     display: flex;
@@ -475,25 +476,108 @@ animation-play-state: paused;
 }
 
 @keyframes scroll {
-    0%{
+    0% {
         transform: translateX(0);
     }
-    100%{
+
+    100% {
         transform: translateX(calc(-250px * 8));
     }
-    
+
 }
 
-.detail>div img{
+.detail>div img {
     width: 100%;
     border-radius: 10px;
 }
 
-.detail{
+.detail {
     cursor: pointer;
     transition: transform 0.7s;
 }
-.detail:hover{
+
+.detail:hover {
     transform: translateZ(10px);
 }
 
+.footer {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.st-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.support {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.support>li {
+    cursor: pointer;
+}
+
+.social {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+}
+
+.social>li svg {
+    fill: black;
+    width: 60%;
+    cursor: pointer;
+}
+
+.nd-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 50px 0 20px 0;
+}
+
+.terms {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgb(128, 128, 128);
+}
+
+.terms>li:nth-child(2),
+.terms>li:nth-child(3),
+.terms>li:nth-child(4),
+.help>li {
+    cursor: pointer;
+}
+
+.help {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgb(128, 128, 128);
+}
