@@ -44,13 +44,14 @@ body {
     margin: 0 40% 0 0;
 }
 
-.menu>div:hover{
+.menu>div:hover {
     color: #7B85C1;
 }
 
-.logo{
+.logo {
     cursor: pointer;
 }
+
 .exp {
     display: flex;
     justify-content: space-between;
@@ -82,10 +83,11 @@ body {
     cursor: pointer;
 }
 
-.sign>button:hover{
+.sign>button:hover {
     color: #565564;
 }
-.log>button:hover{
+
+.log>button:hover {
     background-color: #565564;
 }
 
@@ -102,7 +104,7 @@ body {
     cursor: pointer;
 }
 
-.search{
+.search {
     width: 100%;
     height: 50vh;
     display: flex;
@@ -111,7 +113,7 @@ body {
     margin: 2vh 0;
 }
 
-.search-container{
+.search-container {
     width: 50%;
     height: 100%;
     display: flex;
@@ -121,21 +123,97 @@ body {
     text-align: center;
 }
 
-.disc>h1{
+.disc>h1 {
     font-size: 4rem;
     font-weight: 500;
-    margin: 5% 0;
+    margin: 9% 0;
     font-family: "Source Serif 4", serif;
 }
 
-.ex>p{
-    font-size: 1rem;
+.ex>p {
+    font-size: 1.1rem;
     font-weight: 400;
 }
 
-.ser-input{
+.ser-input {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    margin: 3% 0;
+    padding: 10px 10px 10px 20px;
+    width: 80%;
+    background-color: #f3f3f6;
+}
 
+.ser-input:hover {
+    border: 2px solid rgba(255, 192, 203, 0.452);
+    background-color: transparent;
+}
+
+.search-input {
+    width: 75%;
+}
+
+#search {
+    background-color: #f3f3f6;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+}
+
+.shots {
+    cursor: pointer;
+}
+
+.shots>button {
+    background-color: transparent;
+    border: none;
+    margin: 0 10px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.ser-but {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.ser-but>button {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-color: #EA4C89;
+    border-radius: 50%;
+    border: none;
+}
+
+.purpose {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1%;
+}
+
+.pur-item-1 {
+    background: transparent;
+    color: #cececf;
+    border: none;
+}
+
+.pur-item {
+    background-color: #f3f3f6;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+}
+
+.pur-item:hover {
+    background-color: #faf9fb;
+    border: 2px solid #FAF9FB;
 }
