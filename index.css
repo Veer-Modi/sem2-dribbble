@@ -311,7 +311,7 @@ body {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, auto);
-    grid-gap: 4%;
+    grid-gap: 50px;
 }
 
 .product-card {
@@ -422,4 +422,25 @@ body {
 
 .like>svg:hover {
     fill: pink;
+}
+
+.stc {
+    margin: 7vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.stc>button {
+    border: none;
+    background-color: #0d0c22;
+    color: white;
+    padding: 1%;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.stc>button:hover {
+    background: #0000008a;
 }
